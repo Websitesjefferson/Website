@@ -91,6 +91,7 @@ html {
    display: flex;
    justify-content: center;
    margin-top: 2.0rem;
+  
 }
 
 .menu {
@@ -597,6 +598,9 @@ form {
 
    .teste19,
    .teste20 {
+      font-size: var(--fs-heading-sm);
+   }
+   .menu{
       font-size: var(--fs-heading-sm);
    }
 
