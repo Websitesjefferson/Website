@@ -23,27 +23,36 @@ html {
    justify-content: space-evenly;
    padding-block: 2rem;
    align-items: center;
-   max-width: 100%;
+   width: 100%;
    gap: 2rem;
 }
 
 #barra-superior {
-   max-width: 120rem;
+   width: 120rem;
+   
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    font-weight: 700;
    gap: 2rem;
-   justify-content: space-evenly;
+   justify-content: center;
    padding-inline: 1rem;
+}
+.contatos{
+   display: flex;
+   
 }
 
 .contato,
 .email {
+   
    font-size: 1.8rem;
    font-weight: 500;
    color: aliceblue;
 
+}
+ .email{
+   margin-left: 3rem;
 }
 
 
@@ -61,12 +70,15 @@ html {
    border: none;
    text-decoration: none;
    transition: 200ms;
+   margin-left: 10rem;
+  
 }
 
 .buttonchat {
 
    font-weight: 500;
    padding: 1.0rem 2.0rem;
+ 
    border-radius: 5.0rem;
    background-color: #00b29c;
    color: whitesmoke;
@@ -563,33 +575,29 @@ form {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
    :root{
 
       font-size: 62.5%;
 
-      --fs-heading-sm: clamp(1.2rem, 0.5rem + 1.5vw, 4rem);
-      --fs-heading-s: clamp(1.2rem, 0.5rem + 3vw, 4rem);
-
-     
-   }
-
+      --fs-heading-sm: clamp(1.2rem, 0.5rem + 1.5vw, 1.8rem);
+      --fs-heading-s: clamp(1.2rem, 0.5rem + 1.5vw, 1.8rem);
+}
 
    .butoonzap,
    .buttonchat {
 
-
       font-size: var( --fs-heading-sm);
       padding: 1.0rem 0.5rem;
       margin: initial;
-      
-
-
-   }
+}
 
    .contato,
    .email {
       font-size: var( --fs-heading-s);
+      margin-left: 1rem;
+
+
    }
    .teste17,
    .teste18{
